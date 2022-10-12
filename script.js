@@ -1,4 +1,10 @@
 "use strict";
+import {
+    animate,
+    stagger
+} from "https://cdn.skypack.dev/motion";
+
+
 document.addEventListener("DOMContentLoaded", init);
 
 const icon = document.querySelector("#icon");
@@ -14,3 +20,15 @@ function init() {
         }
     })
 }
+
+animate(
+    "object", {
+        transform: ["rotate(0deg)", "rotate(-45deg)", "rotate(0deg)", "rotate(45deg)", "rotate(0deg)"],
+    }, {
+        duration: 3,
+        easing: "ease-in-out",
+        repeat: Infinity
+    }
+);
+
+//delay: stagger(0.2),

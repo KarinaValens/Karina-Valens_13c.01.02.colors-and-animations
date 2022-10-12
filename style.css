@@ -39,7 +39,7 @@
 }
 #icon {
   max-width: 1.5rem;
-  cursor: pointer;
+  /* cursor: pointer; */
   place-self: center;
 }
 
